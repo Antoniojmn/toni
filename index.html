@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+   
+    <title>Flowers</title>
+</head>
+
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .greetings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .greetings span {
+            font-size: 24px; /* Tamaño más pequeño para las letras */
+            margin: 5px;
+            color: #d81b60;
+        }
+        
+        /* Emoji de mayor tamaño */
+        .greetings span:nth-child(6), 
+        .greetings span:nth-child(10), 
+        .greetings span:nth-child(12) {
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="greetings">
+        <span>F</span>
+        <span>E</span>
+        <span>l</span>
+        <span>I</span>
+        <span>Z</span>
+        <span>😍</span> <!-- Emoji más grande -->
+        <span>2</span>
+        <span>1</span>
+        <span>❤️</span> <!-- Emoji más grande -->
+        <span>D</span>
+        <span>E</span>
+        <span>❤️</span> <!-- Emoji más grande -->
+        <span>S</span>
+        <span>E</span>
+        <span>P</span>
+        <span>T</span>
+        <span>I</span>
+        <span>E</span>
+        <span>M</span>
+        <span>B</span>
+        <span>R</span>
+        <span>E</span>
+    </div>
+    <div class="description">
+        <span>ESTE DETALLE ES PARA TI MI FLAKITA HERMOSA:)</span>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html" style="color: #fff;">PRECIONA AKI MI AMOR❤️</a>
+        </button>
+    </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor con Corazones</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+        }
+
+        .envelope {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background-color: #ff8a80;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .envelope::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: #ff5252;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .letter {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffccbc;
+            transition: top 0.5s ease-in-out;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff1744;
+        }
+
+        /* Estilo para los corazones */
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            color: #ff1744;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        /* Animación flotante de los corazones */
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-40px) rotate(20deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) rotate(-20deg);
+                opacity: 1;
+            }
+        }
+
+        /* Corazones alrededor de la carta */
+        .heart1 {
+            top: -20px;
+            left: -10px;
+            animation-duration: 4s;
+        }
+
+        .heart2 {
+            top: 10px;
+            right: -20px;
+            animation-duration: 5s;
+        }
+
+        .heart3 {
+            bottom: 30px;
+            left: 0;
+            animation-duration: 3s;
+        }
+
+        .heart4 {
+            bottom: -10px;
+            right: 20px;
+            animation-duration: 6s;
+        }
+
+        .controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .controls button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff5252;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .controls button:hover {
+            background-color: #ff1744;
+        }
+    </style>
+</head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor con Imagen</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+        }
+
+        .envelope {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background-color: #ff8a80;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .envelope::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background-color: #ff5252;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .letter {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffccbc;
+            transition: top 0.5s ease-in-out;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Para centrar la imagen y texto en columna */
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff1744;
+        }
+
+        /* Ocultar la imagen inicialmente */
+        .letter img {
+            display: none;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Estilo para los corazones */
+        .heart {
+            position: absolute;
+            font-size: 24px;
+            color: #ff1744;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        /* Animación flotante de los corazones */
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-40px) rotate(20deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) rotate(-20deg);
+                opacity: 1;
+            }
+        }
+
+        /* Corazones alrededor de la carta */
+        .heart1 {
+            top: -20px;
+            left: -10px;
+            animation-duration: 4s;
+        }
+
+        .heart2 {
+            top: 10px;
+            right: -20px;
+            animation-duration: 5s;
+        }
+
+        .heart3 {
+            bottom: 30px;
+            left: 0;
+            animation-duration: 3s;
+        }
+
+        .heart4 {
+            bottom: -10px;
+            right: 20px;
+            animation-duration: 6s;
+        }
+
+        .controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .controls button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff5252;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .controls button:hover {
+            background-color: #ff1744;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="envelope" id="envelope">
+        <div class="letter" id="letter">
+            <p>Te amo ♥</p>
+            <!-- Imagen oculta inicialmente -->
+            <img id="loveImage" src="img/amor.jpg" alt="Imagen de Amor">
+        </div>
+
+        <!-- Corazones flotando alrededor -->
+        <span class="heart heart1">❤️</span>
+        <span class="heart heart2">❤️</span>
+        <span class="heart heart3">❤️</span>
+        <span class="heart heart4">❤️</span>
+        <span class="heart heart1">❤️</span>
+        <span class="heart heart2">❤️</span>
+        <span class="heart heart3">❤️</span>
+        <span class="heart heart4">❤️</span>
+    </div>
+
+    <div class="controls">
+        <button onclick="openLetter()">ABRIR</button>
+        <button onclick="resetLetter()">CERRAR</button>
+    </div>
+
+    <script>
+        function openLetter() {
+            const letter = document.getElementById('letter');
+            const envelope = document.getElementById('envelope');
+            const loveImage = document.getElementById('loveImage');
+            
+            // Mostrar la carta
+            letter.style.top = '10px'; 
+            envelope.style.transform = 'rotateX(-180deg)';
+            
+            // Mostrar la imagen
+            loveImage.style.display = 'block';
+        }
+
+        function resetLetter() {
+            const letter = document.getElementById('letter');
+            const envelope = document.getElementById('envelope');
+            const loveImage = document.getElementById('loveImage');
+            
+            // Ocultar la carta y la imagen
+            letter.style.top = '-100%';
+            envelope.style.transform = 'rotateX(0)';
+            loveImage.style.display = 'none';
+        }
+    </script>
+
+</body>
